@@ -8,44 +8,51 @@
 	<body class="bg">
 		<header>
             <h1>Два.ч</h1>
-		  <!--<h3><?= $welcome ?>, Битард. Сегодня <?= $day ?>!</h3><br>-->
+            <h3>Добро пожаловать. Снова.</h3>
+		  <!--
+            <h3><?= $welcome ?>, Битард. Сегодня <?= $day ?>!</h3>
+            <br>
+            -->
 		  <hr size="1"  noshade color="#D3D3D3"/><br>
-            <table class="yobas">
-			 <tr>
-				<td><img src="pics/1345762147501.png" width="90" height="90"></td>
-                <td><img src="pics/1345761757771.png" width="90" height="90"></td>
-                <td><img src="pics/1346274672404.png" width="90" height="90"></td>
-             </tr>
-		  </table>
+            <div class="yobaspics">
+                <img class="yobaleft" alt="rusyoba" src="pics/1345762147501.png"/>                       <img alt="smileyoba" src="pics/1345761757771.png"/>
+                <img class="yobaright" alt="irakyoba" src="pics/1346274672404.png"/>
+                </div><br/><br/>
         </header>
-        <table class="whatis">
-                <tr>
-                    <td>
-                        <p class="whatis">Два.ч - это система форумов, где можно общаться быстро и свободно, где любая точка зрения имеет право на жизнь. Здесь нет регистрации и подписываться не нужно, хотя это не избавляет вас от необходимости соблюдать правила. Все форумы (кроме /Б/реда), а их список находится снизу, имеют собственную чётко ограниченную тематику. Словом, всё, что не запрещено правилами отдельно взятого форума и относится к его тематике, на этом форуме разрешено.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-			<table>
-				<tr>
-					<td><a href="a.php">/a/</a></font></td>
-					<td><a href="b.php">/b/</a></font></td>
-					<td><a >/d/</td>
-					<td ><a >/s/</td>
-				</tr>
-				<tr>
-					<td><a>/vg/</td>
-					<td><a href="old_files/old.php">/old/</a></td>
-					<td><a href="pr_files/pr.php">/pr/</a></td>
-					<td><a href="psy_files/psy.php">/psy/</td>
-				</tr>
-			</table>
-		</div><br><br>
-        <p class="end">&copy; Стародвач, 2015 &ndash; <?=$year?></p>
+        <section>
+            <article>
+                <table class="whatis">
+                    <tr>
+                        <td>
+                        Два.ч - это система форумов, где можно общаться быстро и свободно, где любая точка зрения имеет право на жизнь. Здесь нет регистрации и подписываться не нужно, хотя это не избавляет вас от необходимости соблюдать правила. Все форумы (кроме /Б/реда), а их список находится снизу, имеют собственную чётко ограниченную тематику. Словом, всё, что не запрещено правилами отдельно взятого форума и относится к его тематике, на этом форуме разрешено.
+                        </td>
+                    </tr>
+                </table><br/><br/><br/>
+            </article>
+			<article>
+                <table class="boards">
+				    <tr>
+					   <td rowspan="2" class="b"><a href="b.php">/b/</a></td>
+                       <td><a href="d.php">/d/</a></td>
+                       <td><a href="s.php">/s/</a></td>
+                       <td><a href="psy_files/psy.php">/psy/</td>
+				    </tr>
+				    <tr>
+                       <td><a href="vg.php">/vg/</a></td>
+					   <td><a href="old_files/old.php">/old/</a></td>
+					   <td><a href="pr_files/pr.php">/pr/</a></td>
+					   
+				    </tr>
+			     </table>
+            </article>
+        </section><br><br>
+        <footer class="index">
+            <p>&copy; Стародвач, 2015 &ndash; <?=$year?></p>
+        </footer>
     </body>
 </html>
 
-<?php
+<!--<?php
     // Установка локали и даты
     setlocale(LC_ALL, "russian");
     $day = strftime('%d');
@@ -83,4 +90,4 @@
         case 6: $day = "воскресенье";
         default: $day = "небытие";
     }
-?>
+?>-->

@@ -1,22 +1,45 @@
 .bg {background-color: #F0F0F0;}
 .whatis {
-    
-    background-color: white; 
+    margin: auto;
+    background-color: white;
+    border: 1px solid #D0D0D0;
     width: 700px; 
     height: 50px;
+    text-align: justify;
+    font-size: 14px;
+    font-family: georgia;
 }
-p.whatis {text-align: justify; font-size: 14px;}
 
-.yobas {
+
+.boards {
     margin: auto;
-    border-spacing: 20px;
-    width: auto;
-    height: auto;
+    border-spacing: 20px; 
+    font-family: comic sans ms; 
+    font-size: 15px;
+    font-weight: bold;
 }
 
-h1 {color: orange; text-align: center;}
+td.b {font-weight: bolder; font-size: 40px}
 
+a:visited {color: crimson; text-decoration: none;}
+a:link {color: crimson; text-decoration: none;}
+a:hover {color: crimson; text-decoration: underline;}
+
+
+div.yobaspics {text-align: center;}
+div img {
+    max-width: 90px; 
+    max-height: 90px;
+    display: inline;
+}
+.yobaleft {margin-right: 30px;}
+.yobaright {margin-left: 30px;}
+
+h1, h2, h3 {color: orange; text-align: center;}
+p.whatis {text-align: justify; font-size: 14px;}
 
 
 hr {size: 1px; width: 99%;}
+
+footer.index {text-align: center;}
   
